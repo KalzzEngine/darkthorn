@@ -63,6 +63,7 @@ pip3 install cloudscraper colorama requests
 
 # Jalankan tools | Run the tool
 python3 darkthorn.py
+---
 ```
 
 ---
