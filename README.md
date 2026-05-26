@@ -1,11 +1,11 @@
 ```markdown
-# 🔥 DARKTHORN ATTACK SUITE v4.2.0
+# DARKTHORN ATTACK SUITE v4.2.0
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg">
-  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg">
-  <img src="https://img.shields.io/badge/License-Educational%20Only-red.svg">
-  <img src="https://img.shields.io/badge/Status-Stable-brightgreen.svg">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/License-Educational%20Only-red.svg" alt="License">
+  <img src="https://img.shields.io/badge/Status-Stable-brightgreen.svg" alt="Status">
 </p>
 
 <p align="center">
@@ -15,15 +15,19 @@
 
 ---
 
-## ⚠️ Peringatan Penting | Important Warning
-
-> **🇮🇩 INDONESIA:** Tools ini dibuat **SEMATA-MATA** untuk tujuan edukasi dan pengujian keamanan yang **SAH**. Penggunaan tanpa izin tertulis adalah **TINDAKAN ILEGAL**. Penulis tidak bertanggung jawab atas penyalahgunaan.
->
-> **🇬🇧 ENGLISH:** This tool is created **SOLELY** for educational and **LAWFUL** security testing. Unauthorized use is **ILLEGAL**. Author assumes no liability for misuse.
+## 📋 Daftar Isi | Table of Contents
+- [Tentang Darkthorn | About Darkthorn](#tentang-darkthorn--about-darkthorn)
+- [Fitur Utama | Key Features](#fitur-utama--key-features)
+- [Instalasi | Installation](#instalasi--installation)
+- [Cara Penggunaan | Usage Guide](#cara-penggunaan--usage-guide)
+- [Metode Serangan | Attack Methods](#metode-serangan--attack-methods)
+- [Persyaratan Sistem | System Requirements](#persyaratan-sistem--system-requirements)
+- [Peringatan | Disclaimer](#peringatan--disclaimer)
+- [Lisensi | License](#lisensi--license)
 
 ---
 
-## 📖 Tentang Darkthorn | About Darkthorn
+## 🎯 Tentang Darkthorn | About Darkthorn
 
 **Bahasa Indonesia** | Darkthorn adalah toolkit pengujian ketahanan server profesional yang dirancang untuk para praktisi keamanan siber dalam melakukan stress testing dan analisis performa infrastruktur. Dilengkapi dengan 10 metode serangan berbeda, Darkthorn mampu mensimulasikan berbagai skenario serangan DDoS di dunia nyata untuk mengidentifikasi kerentanan dan kelemahan sistem.
 
@@ -43,18 +47,21 @@
 | 🔧 **Modular Architecture** | Easy to extend and customize |
 
 ---
+```
+## 💻 Instalasi | Installation
 
-## 📦 Instalasi | Installation
+### Bahasa Indonesia
 
-**Persyaratan awal | Prerequisites:**
+**Persyaratan awal:**
 ```bash
-# Pastikan Python 3.8+ terinstall | Ensure Python 3.8+ is installed
+# Pastikan Python 3.8+ terinstall
 python3 --version
 
-# Install pip jika belum ada | Install pip if not available
+# Install pip jika belum ada
 sudo apt install python3-pip -y   # Debian/Ubuntu
+```
 
-## Langkah instalasi | Installation steps:
+Langkah instalasi:
 
 ```bash
 # Clone repository (atau download file darkthorn.py)
@@ -64,26 +71,56 @@ cd darkthorn
 # Install dependencies
 pip3 install cloudscraper colorama requests
 
-# Jalankan tools | Run the tool
+# Jalankan tools
 python3 darkthorn.py
+```
+
+English
+
+Prerequisites:
+
+```bash
+# Ensure Python 3.8+ is installed
+python3 --version
+
+# Install pip if not available
+sudo apt install python3-pip -y   # Debian/Ubuntu
+```
+
+Installation steps:
+
+```bash
+# Clone repository (or download darkthorn.py)
+git clone https://github.com/your-repo/darkthorn.git
+cd darkthorn
+
+# Install dependencies
+pip3 install cloudscraper colorama requests
+
+# Run the tool
+python3 darkthorn.py
+```
 
 ---
 
 🚀 Cara Penggunaan | Usage Guide
 
-Penggunaan dasar | Basic usage:
+Bahasa Indonesia
+
+Penggunaan dasar:
 
 ```bash
 python3 darkthorn.py
+```
 
-Parameter yang dapat disesuaikan | Configurable parameters:
+Parameter yang dapat disesuaikan:
 
 1. Target URL - Alamat website yang akan diuji (contoh: https://example.com)
 2. Metode Serangan - Pilih dari 10 metode yang tersedia (1-10)
 3. Jumlah Thread - Tingkat konkurensi (default: 500)
 4. Durasi - Lama pengujian dalam detik (0 = infinite)
 
-Contoh skenario | Example scenario:
+Contoh skenario:
 
 ```bash
 # Test dengan 1000 thread selama 60 detik
@@ -91,6 +128,32 @@ Target: https://test-server.local
 Method: 5 (Multi-Vector Assault)
 Threads: 1000
 Duration: 60
+```
+
+English
+
+Basic usage:
+
+```bash
+python3 darkthorn.py
+```
+
+Configurable parameters:
+
+1. Target URL - Website address to test (e.g., https://example.com)
+2. Attack Method - Choose from 10 available methods (1-10)
+3. Thread Count - Concurrency level (default: 500)
+4. Duration - Test duration in seconds (0 = infinite)
+
+Example scenario:
+
+```bash
+# Test with 1000 threads for 60 seconds
+Target: https://test-server.local
+Method: 5 (Multi-Vector Assault)
+Threads: 1000
+Duration: 60
+```
 
 ---
 
@@ -119,7 +182,7 @@ Network 10 Mbps 100+ Mbps
 Python 3.8 3.10+
 OS Linux/Windows/macOS Linux (Kali/Ubuntu)
 
-Optimasi sistem untuk performa maksimal | System optimization for maximum performance:
+Optimasi sistem untuk performa maksimal:
 
 ```bash
 # Linux kernel tuning
@@ -127,6 +190,7 @@ sudo sysctl -w net.ipv4.tcp_tw_reuse=1
 sudo sysctl -w net.core.rmem_max=134217728
 sudo sysctl -w net.core.wmem_max=134217728
 ulimit -n 999999
+```
 
 ---
 
@@ -164,28 +228,28 @@ The author assumes no liability for any misuse of this tool. Only use on:
 
 📜 Lisensi | License
 
+```
 Educational Use Only License
 
 Copyright (c) 2026 Darkthorn Team
 
-IZIN TERBATAS | LIMITED PERMISSION:
-Penggunaan kode ini hanya diizinkan untuk | Use of this code is only permitted for:
-1. Pembelajaran dan riset keamanan siber | Cybersecurity learning and research
-2. Pengujian penetrasi dengan izin tertulis | Penetration testing with written permission
-3. Analisis dalam lingkungan laboratorium | Analysis in laboratory environments
+IZIN TERBATAS:
+Penggunaan kode ini hanya diizinkan untuk:
+1. Pembelajaran dan riset keamanan siber
+2. Pengujian penetrasi dengan izin tertulis
+3. Analisis dalam lingkungan laboratorium
 
-DILARANG KERAS | STRICTLY PROHIBITED:
-1. Menyerang layanan pihak ketiga tanpa izin | Attacking third-party services without permission
-2. Mendistribusikan ulang untuk tujuan ilegal | Redistributing for illegal purposes
-3. Menghapus watermark atau atribusi | Removing watermark or attribution
+DILARANG KERAS:
+1. Menyerang layanan pihak ketiga tanpa izin
+2. Mendistribusikan ulang untuk tujuan ilegal
+3. Menghapus watermark atau atribusi
+```
 
 ---
 
 📞 Kontribusi | Contributing
 
 Kritik dan saran untuk pengembangan lebih lanjut dapat dikirimkan melalui issue tracker.
-
-Suggestions and feedback for further development can be sent via issue tracker.
 
 ---
 
@@ -195,6 +259,6 @@ Suggestions and feedback for further development can be sent via issue tracker.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/For%20Educational%20Purposes%20Only-FF0000.svg">
+  <img src="https://img.shields.io/badge/For%20Educational%20Purposes%20Only-FF0000.svg" alt="Educational Only">
 </p>
 ```
