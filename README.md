@@ -57,7 +57,7 @@ Langkah instalasi:
 
 ```bash
 # Clone repository (atau download file darkthorn.py)
-git clone https://github.com/KalzzEngine/darkthorntoolskit.git
+git clone https://github.com/KalzzEngine/darkthorn.git
 cd darkthorn
 
 # Install dependencies
@@ -83,7 +83,7 @@ Installation steps:
 
 ```bash
 # Clone repository (or download darkthorn.py)
-git clone https://github.com/KalzzEngine/darkthorntoolskit.git
+git clone https://github.com/KalzzEngine/darkthorn.git
 cd darkthorn
 
 # Install dependencies
