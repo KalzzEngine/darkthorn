@@ -1,11 +1,10 @@
-```markdown
 # DARKTHORN ATTACK SUITE v4.2.0
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python Version">
-  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg" alt="Platform">
-  <img src="https://img.shields.io/badge/License-Educational%20Only-red.svg" alt="License">
-  <img src="https://img.shields.io/badge/Status-Stable-brightgreen.svg" alt="Status">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg">
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg">
+  <img src="https://img.shields.io/badge/License-Educational%20Only-red.svg">
+  <img src="https://img.shields.io/badge/Status-Stable-brightgreen.svg">
 </p>
 
 <p align="center">
@@ -15,19 +14,15 @@
 
 ---
 
-## 📋 Daftar Isi | Table of Contents
-- [Tentang Darkthorn | About Darkthorn](#tentang-darkthorn--about-darkthorn)
-- [Fitur Utama | Key Features](#fitur-utama--key-features)
-- [Instalasi | Installation](#instalasi--installation)
-- [Cara Penggunaan | Usage Guide](#cara-penggunaan--usage-guide)
-- [Metode Serangan | Attack Methods](#metode-serangan--attack-methods)
-- [Persyaratan Sistem | System Requirements](#persyaratan-sistem--system-requirements)
-- [Peringatan | Disclaimer](#peringatan--disclaimer)
-- [Lisensi | License](#lisensi--license)
+##  Peringatan Penting | Important Warning
+
+> **🇮🇩 INDONESIA:** Tools ini dibuat **SEMATA-MATA** untuk tujuan edukasi dan pengujian keamanan yang **SAH**. Penggunaan tanpa izin tertulis adalah **TINDAKAN ILEGAL**. Penulis tidak bertanggung jawab atas penyalahgunaan.
+>
+> **🇬🇧 ENGLISH:** This tool is created **SOLELY** for educational and **LAWFUL** security testing. Unauthorized use is **ILLEGAL**. Author assumes no liability for misuse.
 
 ---
 
-## 🎯 Tentang Darkthorn | About Darkthorn
+## Tentang Darkthorn | About Darkthorn
 
 **Bahasa Indonesia** | Darkthorn adalah toolkit pengujian ketahanan server profesional yang dirancang untuk para praktisi keamanan siber dalam melakukan stress testing dan analisis performa infrastruktur. Dilengkapi dengan 10 metode serangan berbeda, Darkthorn mampu mensimulasikan berbagai skenario serangan DDoS di dunia nyata untuk mengidentifikasi kerentanan dan kelemahan sistem.
 
@@ -35,31 +30,28 @@
 
 ---
 
-## ✨ Fitur Utama | Key Features
+## Fitur Utama | Key Features
 
 | Fitur | Keterangan |
 |-------|-------------|
-| 🌐 **Multi-Protocol Support** | HTTP/HTTPS, TCP, UDP, DNS, SSL |
-| 🛡️ **Cloudflare Bypass Engine** | Advanced JavaScript challenge solver |
-| 🔄 **Proxy Chain Integration** | Support for HTTP/SOCKS proxy rotation |
-| ⚡ **High Concurrency** | Up to 10,000+ concurrent threads |
-| 🎨 **Real-time Statistics** | Live request counter, bandwidth monitor |
-| 🔧 **Modular Architecture** | Easy to extend and customize |
+| **Multi-Protocol Support** | HTTP/HTTPS, TCP, UDP, DNS, SSL |
+| **Cloudflare Bypass Engine** | Advanced JavaScript challenge solver |
+| **Proxy Chain Integration** | Support for HTTP/SOCKS proxy rotation |
+| **High Concurrency** | Up to 10,000+ concurrent threads |
+| **Real-time Statistics** | Live request counter, bandwidth monitor |
+| **Modular Architecture** | Easy to extend and customize |
 
 ---
-```
-## 💻 Instalasi | Installation
 
-### Bahasa Indonesia
+## Instalasi | Installation
 
-**Persyaratan awal:**
+**Persyaratan awal | Prerequisites:**
 ```bash
-# Pastikan Python 3.8+ terinstall
+# Pastikan Python 3.8+ terinstall | Ensure Python 3.8+ is installed
 python3 --version
 
-# Install pip jika belum ada
+# Install pip jika belum ada | Install pip if not available
 sudo apt install python3-pip -y   # Debian/Ubuntu
-```
 
 Langkah instalasi:
 
@@ -102,8 +94,7 @@ python3 darkthorn.py
 ```
 
 ---
-
-🚀 Cara Penggunaan | Usage Guide
+ Cara Penggunaan | Usage Guide
 
 Bahasa Indonesia
 
@@ -157,7 +148,7 @@ Duration: 60
 
 ---
 
-⚔️ Metode Serangan | Attack Methods
+ Metode Serangan | Attack Methods
 
 No Method Name Protocol Description
 1 HTTP/2 Rapid Reset HTTP/2 Exploits HTTP/2 stream cancellation vulnerability
@@ -173,7 +164,7 @@ No Method Name Protocol Description
 
 ---
 
-🖥️ Persyaratan Sistem | System Requirements
+ Persyaratan Sistem | System Requirements
 
 Component Minimum Recommended
 CPU 2 cores 4+ cores
@@ -194,7 +185,7 @@ ulimit -n 999999
 
 ---
 
-⚠️ Peringatan | Disclaimer
+ Peringatan | Disclaimer
 
 Bahasa Indonesia
 
@@ -226,12 +217,12 @@ The author assumes no liability for any misuse of this tool. Only use on:
 
 ---
 
-📜 Lisensi | License
+ Lisensi | License
 
 ```
 Educational Use Only License
 
-Copyright (c) 2026 Darkthorn Team
+Copyright (c) 2026 Kalzz Team
 
 IZIN TERBATAS:
 Penggunaan kode ini hanya diizinkan untuk:
