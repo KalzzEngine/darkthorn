@@ -1,4 +1,4 @@
-# DARKTHORN ATTACK SUITE v4.2.0
+# DARKTHORN ATTACK SUITE v4.3.0
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg">
