@@ -1,105 +1,60 @@
-```markdown
 # DARKTHORN ATTACK SUITE v4.2.0
 
-> **⚠️ PERINGATAN PENTING | IMPORTANT WARNING**
-> 
-> **Bahasa Indonesia:** Tools ini dibuat untuk **tujuan edukasi dan pengujian keamanan yang sah**. Menggunakan alat ini pada sistem atau jaringan tanpa izin tertulis adalah tindakan ilegal. Penulis tidak bertanggung jawab atas penyalahgunaan.
->
-> **English:** This tool is created for **educational and lawful security testing purposes only**. Using this tool on systems or networks without written permission is illegal. The author assumes no liability for misuse.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/License-Educational%20Only-red.svg" alt="License">
+  <img src="https://img.shields.io/badge/Status-Stable-brightgreen.svg" alt="Status">
+</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg">
-  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey.svg">
-  <img src="https://img.shields.io/badge/License-Educational%20Only-red.svg">
-  <img src="https://img.shields.io/badge/Status-For%20Education-yellow.svg">
+  <b>Advanced Multi-Vector Denial of Service Testing Toolkit</b><br>
+  <i>Professional-grade penetration testing utility for stress testing and security assessment</i>
 </p>
 
 ---
 
-## 📖 Deskripsi | Description
-
-**🇮🇩 Bahasa Indonesia**  
-Darkthorn adalah toolkit pengujian stres server profesional yang dirancang untuk praktisi keamanan siber. Tools ini membantu mengidentifikasi kerentanan infrastruktur melalui simulasi berbagai serangan DDoS.
-
-**🇬🇧 English**  
-Darkthorn is a professional server stress testing toolkit designed for cybersecurity practitioners. This tool helps identify infrastructure vulnerabilities through simulation of various DDoS attack vectors.
-
----
-
-## ⚙️ Fitur | Features
-
-- 10 metode serangan berbeda | 10 different attack methods
-- Cloudflare bypass & JS challenge solver
-- Multi-threading support hingga 10.000+ thread
-- Proxy chain & rotasi otomatis
-- Real-time statistik bandwidth
-- Cross-platform (Linux, Windows, macOS)
+## 📋 Daftar Isi | Table of Contents
+- [Tentang Darkthorn | About Darkthorn](#tentang-darkthorn--about-darkthorn)
+- [Fitur Utama | Key Features](#fitur-utama--key-features)
+- [Instalasi | Installation](#instalasi--installation)
+- [Cara Penggunaan | Usage Guide](#cara-penggunaan--usage-guide)
+- [Metode Serangan | Attack Methods](#metode-serangan--attack-methods)
+- [Persyaratan Sistem | System Requirements](#persyaratan-sistem--system-requirements)
+- [Peringatan | Disclaimer](#peringatan--disclaimer)
+- [Lisensi | License](#lisensi--license)
 
 ---
 
-## 📦 Instalasi | Installation
+## 🎯 Tentang Darkthorn | About Darkthorn
 
+**Bahasa Indonesia** | Darkthorn adalah toolkit pengujian ketahanan server profesional yang dirancang untuk para praktisi keamanan siber dalam melakukan stress testing dan analisis performa infrastruktur. Dilengkapi dengan 10 metode serangan berbeda, Darkthorn mampu mensimulasikan berbagai skenario serangan DDoS di dunia nyata untuk mengidentifikasi kerentanan dan kelemahan sistem.
+
+**English** | Darkthorn is a professional server resilience testing toolkit designed for cybersecurity practitioners to conduct stress testing and infrastructure performance analysis. Equipped with 10 different attack methods, Darkthorn can simulate various real-world DDoS attack scenarios to identify system vulnerabilities and weaknesses.
+
+---
+
+## ✨ Fitur Utama | Key Features
+
+| Fitur | Keterangan |
+|-------|-------------|
+| 🌐 **Multi-Protocol Support** | HTTP/HTTPS, TCP, UDP, DNS, SSL |
+| 🛡️ **Cloudflare Bypass Engine** | Advanced JavaScript challenge solver |
+| 🔄 **Proxy Chain Integration** | Support for HTTP/SOCKS proxy rotation |
+| ⚡ **High Concurrency** | Up to 10,000+ concurrent threads |
+| 🎨 **Real-time Statistics** | Live request counter, bandwidth monitor |
+| 🔧 **Modular Architecture** | Easy to extend and customize |
+
+---
+
+## 💻 Instalasi | Installation
+
+### Bahasa Indonesia
+
+**Persyaratan awal:**
 ```bash
-# Clone repository
-git clone https://github.com/username/darkthorn.git
-cd darkthorn
+# Pastikan Python 3.8+ terinstall
+python3 --version
 
-# Install dependencies
-pip3 install cloudscraper colorama requests
-
-# Run
-python3 darkthorn.py
-```
-
----
-
-🚀 Penggunaan | Usage
-
-```bash
-python3 darkthorn.py
-```
-
-Kemudian ikuti prompt untuk memasukkan:
-
-1. Target URL
-2. Metode serangan (1-10)
-3. Jumlah thread
-4. Durasi serangan
-
----
-
-📋 Metode Serangan | Attack Methods
-
-No Metode Deskripsi
-1 HTTP/2 Rapid Reset Exploit HTTP/2 stream cancellation
-2 Slowloris DDoS Keep connections half-open
-3 Socket Flood Raw TCP/SSL socket flooding
-4 Proxy Chain Attack Rotate proxies to avoid blocking
-5 Multi-Vector Assault HTTP + TCP combined attack
-6 CF Bypass Engine Solve Cloudflare challenges
-7 SSL Renegotiation CPU-heavy crypto operations
-8 DNS Amplification Spoofed DNS amplification
-9 JavaScript Solver Custom anti-bot bypass
-10 All Combined Execute all methods simultaneously
-
----
-
-🛡️ Disclaimer
-
-Penggunaan tools ini di luar lingkungan yang sah (milik sendiri / izin tertulis) melanggar hukum. Penulis tidak bertanggung jawab atas kerusakan atau konsekuensi hukum yang timbul.
-
-Using this tool outside lawful environments (your own property / written permission) violates the law. The author is not responsible for damages or legal consequences.
-
----
-
-📄 Lisensi | License
-
-Educational Use Only - Tidak diizinkan untuk penggunaan komersial atau ilegal.
-
----
-
-⭐ Catatan | Note
-
-Tools ini dibuat untuk edukasi keamanan siber dan pengujian penetrasi dengan izin. Gunakan secara bertanggung jawab.
-
-```
+# Install pip jika belum ada
+sudo apt install python3-pip -y   # Debian/Ubuntu
