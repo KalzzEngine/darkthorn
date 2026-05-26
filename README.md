@@ -1,3 +1,4 @@
+```markdown
 # DARKTHORN ATTACK SUITE v4.2.0
 
 > **⚠️ PERINGATAN PENTING | IMPORTANT WARNING**
@@ -48,3 +49,57 @@ pip3 install cloudscraper colorama requests
 
 # Run
 python3 darkthorn.py
+```
+
+---
+
+🚀 Penggunaan | Usage
+
+```bash
+python3 darkthorn.py
+```
+
+Kemudian ikuti prompt untuk memasukkan:
+
+1. Target URL
+2. Metode serangan (1-10)
+3. Jumlah thread
+4. Durasi serangan
+
+---
+
+📋 Metode Serangan | Attack Methods
+
+No Metode Deskripsi
+1 HTTP/2 Rapid Reset Exploit HTTP/2 stream cancellation
+2 Slowloris DDoS Keep connections half-open
+3 Socket Flood Raw TCP/SSL socket flooding
+4 Proxy Chain Attack Rotate proxies to avoid blocking
+5 Multi-Vector Assault HTTP + TCP combined attack
+6 CF Bypass Engine Solve Cloudflare challenges
+7 SSL Renegotiation CPU-heavy crypto operations
+8 DNS Amplification Spoofed DNS amplification
+9 JavaScript Solver Custom anti-bot bypass
+10 All Combined Execute all methods simultaneously
+
+---
+
+🛡️ Disclaimer
+
+Penggunaan tools ini di luar lingkungan yang sah (milik sendiri / izin tertulis) melanggar hukum. Penulis tidak bertanggung jawab atas kerusakan atau konsekuensi hukum yang timbul.
+
+Using this tool outside lawful environments (your own property / written permission) violates the law. The author is not responsible for damages or legal consequences.
+
+---
+
+📄 Lisensi | License
+
+Educational Use Only - Tidak diizinkan untuk penggunaan komersial atau ilegal.
+
+---
+
+⭐ Catatan | Note
+
+Tools ini dibuat untuk edukasi keamanan siber dan pengujian penetrasi dengan izin. Gunakan secara bertanggung jawab.
+
+```
