@@ -52,7 +52,7 @@ python3 --version
 
 # Install pip jika belum ada | Install pip if not available
 sudo apt install python3-pip -y   # Debian/Ubuntu
-
+```
 Langkah instalasi:
 
 ```bash
