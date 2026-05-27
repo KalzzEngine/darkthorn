@@ -1,4 +1,3 @@
----
 ```markdown
 # 🩸 DARKTHORN SIGNATURE v3.2.7
 
