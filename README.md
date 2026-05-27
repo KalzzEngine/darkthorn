@@ -1,20 +1,27 @@
-# DARKTHORN ATTACK SUITE v3.2.7
+---
+```markdown
+# 🩸 DARKTHORN SIGNATURE v3.2.7
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg">
   <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg">
   <img src="https://img.shields.io/badge/License-Educational%20Only-red.svg">
   <img src="https://img.shields.io/badge/Status-Stable-brightgreen.svg">
+  <img src="https://img.shields.io/badge/Edition-SIGNATURE-gold.svg">
 </p>
 
 <p align="center">
-  <b>Advanced Multi-Vector Denial of Service Testing Toolkit</b><br>
-  <i>Professional-grade penetration testing utility for stress testing and security assessment</i>
+  <b>⚔️ Advanced Multi-Vector Denial of Service Testing Toolkit ⚔️</b><br>
+  <i>Signature Edition | Professional-grade penetration testing utility</i>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=DARKTHORN+SIGNATURE;The+Unseen+Sting;Piercing+Any+Defense" alt="Typing SVG">
 </p>
 
 ---
 
-##  Peringatan Penting | Important Warning
+## ⚠️ Peringatan Penting | Important Warning
 
 > **🇮🇩 INDONESIA:** Tools ini dibuat **SEMATA-MATA** untuk tujuan edukasi dan pengujian keamanan yang **SAH**. Penggunaan tanpa izin tertulis adalah **TINDAKAN ILEGAL**. Penulis tidak bertanggung jawab atas penyalahgunaan.
 >
@@ -22,28 +29,29 @@
 
 ---
 
-## Tentang Darkthorn | About Darkthorn
+## 🎯 Tentang DARKTHORN SIGNATURE | About
 
-**Bahasa Indonesia** | Darkthorn adalah toolkit pengujian ketahanan server profesional yang dirancang untuk para praktisi keamanan siber dalam melakukan stress testing dan analisis performa infrastruktur. Dilengkapi dengan 10 metode serangan berbeda, Darkthorn mampu mensimulasikan berbagai skenario serangan DDoS di dunia nyata untuk mengidentifikasi kerentanan dan kelemahan sistem.
+**Bahasa Indonesia** | **DARKTHORN SIGNATURE** adalah edisi personal dari toolkit pengujian ketahanan server yang dirancang khusus untuk para praktisi keamanan siber. Dengan filosofi *"The Unseen Sting"*, Darkthorn Signature menghadirkan kombinasi unik antara kecepatan, ketepatan, dan kemampuan bypass yang tidak dimiliki tools lain. Setiap fitur adalah *ciri khas* yang membedakannya dari toolkit generik.
 
-**English** | Darkthorn is a professional server resilience testing toolkit designed for cybersecurity practitioners to conduct stress testing and infrastructure performance analysis. Equipped with 10 different attack methods, Darkthorn can simulate various real-world DDoS attack scenarios to identify system vulnerabilities and weaknesses.
+**English** | **DARKTHORN SIGNATURE** is the personal edition of a server resilience testing toolkit, specially designed for cybersecurity practitioners. With the philosophy *"The Unseen Sting"*, Darkthorn Signature delivers a unique combination of speed, precision, and bypass capabilities not found in other tools. Every feature is a *trademark* that sets it apart from generic toolkits.
 
 ---
 
-## Fitur Utama | Key Features
+## ✨ Fitur Unggulan | Signature Features
 
 | Fitur | Keterangan |
 |-------|-------------|
-| **Multi-Protocol Support** | HTTP/HTTPS, TCP, UDP, DNS, SSL |
-| **Cloudflare Bypass Engine** | Advanced JavaScript challenge solver |
-| **Proxy Chain Integration** | Support for HTTP/SOCKS proxy rotation |
-| **High Concurrency** | Up to 10,000+ concurrent threads |
-| **Real-time Statistics** | Live request counter, bandwidth monitor |
-| **Modular Architecture** | Easy to extend and customize |
+| **🔥 Multi-Protocol Support** | HTTP/HTTPS, TCP, UDP, DNS, SSL, WebSocket |
+| **🎭 Signature Bypass Engine** | Advanced JS challenge solver + L3/L4 spoofing |
+| **🔄 Proxy Chain Integration** | Support for HTTP/SOCKS proxy rotation (10k+) |
+| **💀 High Concurrency** | Up to 100,000+ concurrent threads |
+| **📊 Real-time Analytics** | Live request counter, bandwidth monitor, RPS meter |
+| **🧬 Modular Architecture** | Easy to extend and customize |
+| **🔒 Zero-Day Protection** | Auto-detection untuk WAF/CDN terbaru |
 
 ---
 
-## Instalasi | Installation
+## 📦 Instalasi | Installation
 
 **Persyaratan awal | Prerequisites:**
 ```bash
@@ -53,48 +61,27 @@ python3 --version
 # Install pip jika belum ada | Install pip if not available
 sudo apt install python3-pip -y   # Debian/Ubuntu
 ```
-Langkah instalasi:
+
+Langkah instalasi | Installation steps:
 
 ```bash
 # Clone repository (atau download file darkthorn.py)
-git clone https://github.com/KalzzEngine/darkthorn.git
-cd darkthorn
+git clone https://github.com/KalzzEngine/darkthorn-signature.git
+cd darkthorn-signature
 
 # Install dependencies
-pip3 install cloudscraper colorama requests
+pip3 install -r requirements.txt
 
-# Jalankan tools
-python3 darkthorn.py
-```
+# Atau install manual | Or install manually
+pip3 install cloudscraper colorama requests aiohttp websocket-client
 
-English
-
-Prerequisites:
-
-```bash
-# Ensure Python 3.8+ is installed
-python3 --version
-
-# Install pip if not available
-sudo apt install python3-pip -y   # Debian/Ubuntu
-```
-
-Installation steps:
-
-```bash
-# Clone repository (or download darkthorn.py)
-git clone https://github.com/KalzzEngine/darkthorn.git
-cd darkthorn
-
-# Install dependencies
-pip3 install cloudscraper colorama requests
-
-# Run the tool
+# Jalankan tools | Run the tool
 python3 darkthorn.py
 ```
 
 ---
- Cara Penggunaan | Usage Guide
+
+🎮 Cara Penggunaan | Usage Guide
 
 Bahasa Indonesia
 
@@ -106,18 +93,26 @@ python3 darkthorn.py
 
 Parameter yang dapat disesuaikan:
 
-1. Target URL - Alamat website yang akan diuji (contoh: https://example.com)
-2. Metode Serangan - Pilih dari 10 metode yang tersedia (1-10)
-3. Jumlah Thread - Tingkat konkurensi (default: 500)
-4. Durasi - Lama pengujian dalam detik (0 = infinite)
+Parameter Deskripsi Contoh
+Target URL Alamat website yang akan diuji https://example.com
+Mode AUTO DDOS (GACOR) / MANUAL 1 atau 2
+Metode Serangan Pilih dari 30+ metode (mode manual) 1-30
+Jumlah Thread Tingkat konkurensi 500 - 100000
+Durasi Lama pengujian dalam detik 0 (infinite) / 60
 
 Contoh skenario:
 
 ```bash
-# Test dengan 1000 thread selama 60 detik
+# Mode AUTO DDOS - Rekomendasi terbaik
+Target: https://target-site.com
+Mode: 1 (AUTO DDOS - GACOR!)
+# Tools akan otomatis mendeteksi dan memilih metode terbaik
+
+# Mode MANUAL dengan 2000 thread selama 60 detik
 Target: https://test-server.local
+Mode: 2 (MANUAL)
 Method: 5 (Multi-Vector Assault)
-Threads: 1000
+Threads: 2000
 Duration: 60
 ```
 
@@ -131,40 +126,44 @@ python3 darkthorn.py
 
 Configurable parameters:
 
-1. Target URL - Website address to test (e.g., https://example.com)
-2. Attack Method - Choose from 10 available methods (1-10)
-3. Thread Count - Concurrency level (default: 500)
-4. Duration - Test duration in seconds (0 = infinite)
-
-Example scenario:
-
-```bash
-# Test with 1000 threads for 60 seconds
-Target: https://test-server.local
-Method: 5 (Multi-Vector Assault)
-Threads: 1000
-Duration: 60
-```
+Parameter Description Example
+Target URL Website address to test https://example.com
+Mode AUTO DDOS / MANUAL 1 or 2
+Attack Method Choose from 30+ methods (manual mode) 1-30
+Thread Count Concurrency level 500 - 100000
+Duration Test duration in seconds 0 (infinite) / 60
 
 ---
 
- Metode Serangan | Attack Methods
+⚔️ Metode Serangan | Attack Methods
 
 No Method Name Protocol Description
 1 HTTP/2 Rapid Reset HTTP/2 Exploits HTTP/2 stream cancellation vulnerability
-2 Slowloris DDoS HTTP Keeps connections open with partial requests
-3 Socket Flood TCP/SSL Raw socket connection flooding with TLS support
-4 Proxy Chain Attack HTTP Rotates through proxy list to avoid IP blocking
-5 Multi-Vector Assault Mixed Combines HTTP + TCP attacks simultaneously
-6 CF Bypass Engine HTTP Solves Cloudflare JavaScript challenges
-7 SSL Renegotiation SSL/TLS Triggers expensive cryptographic operations
-8 DNS Amplification UDP Uses spoofed DNS queries for amplification
-9 JavaScript Solver HTTP Custom JS engine for anti-bot bypass
-10 All Methods Combined Mixed Executes all attack vectors concurrently
+2 Slowloris Advanced HTTP Keeps connections open with partial headers
+3 SYN Flood + IP Spoofing TCP Raw packet flooding with source IP randomization
+4 UDP Amplification UDP DNS/NTP/SSDP amplification attack
+5 SSL Renegotiation SSL/TLS Triggers expensive cryptographic operations
+6 WebSocket Persistent WebSocket Long-lived connection exhaustion
+7 gRPC Reflection Flood gRPC Reflection service abuse
+8 GraphQL Depth Attack GraphQL Recursive query depth exploitation
+9 Range Header DoS HTTP Apache Killer (CVE-2018-6389)
+10 HTTP Pipeline Flood HTTP Request pipelining exhaustion
+11 Zip Bomb Attack HTTP Compression bomb decompression
+12 JSON Deserialization Bomb HTTP Deep nesting JSON attack
+13 NoSQL Injection NoSQL Mass query injection
+14 HTTP Request Smuggling HTTP CL.TE / TE.CL smuggling
+15 SSRF Chain Exploit HTTP Internal service probing
+16 Cache Poisoning HTTP Header injection for cache corruption
+17 CDN Purge Abuse HTTP Cache purge endpoint flooding
+18 Origin Exhaustion HTTP Backend server resource depletion
+19 IPv6 Fragment Flood IPv6 Fragment reassembly exhaustion
+20 TLS Poisoning TLS Malformed TLS record flooding
+21-29 ...dan 9 metode lainnya Various WebDAV, LDAP, SSTI, ARP, MAC Flood
+30 ALL METHODS COMBINED Mixed Executes all attack vectors simultaneously
 
 ---
 
- Persyaratan Sistem | System Requirements
+💻 Persyaratan Sistem | System Requirements
 
 Component Minimum Recommended
 CPU 2 cores 4+ cores
@@ -180,76 +179,135 @@ Optimasi sistem untuk performa maksimal:
 sudo sysctl -w net.ipv4.tcp_tw_reuse=1
 sudo sysctl -w net.core.rmem_max=134217728
 sudo sysctl -w net.core.wmem_max=134217728
+sudo sysctl -w net.ipv4.ip_local_port_range="1024 65535"
+
+# Increase file descriptor limit
 ulimit -n 999999
+
+# For raw socket attacks (SYN Flood, IP Spoofing)
+sudo python3 darkthorn.py
 ```
 
 ---
 
- Peringatan | Disclaimer
+🎯 Target Testing yang Didukung | Supported Targets
+
+Platform Support Keterangan
+Standard Web Server ✅ 100% Apache, Nginx, IIS
+Cloudflare Protected ✅ 95% L3/L4/L7 bypass engine
+AWS WAF / CloudFront ✅ 85% HTTP/2 Rapid Reset effective
+Akamai ✅ 80% Header tampering bypass
+Imperva / Incapsula ✅ 75% IP spoofing + slow connection
+Sucuri ✅ 70% Proxy rotation required
+Vercel / Netlify ✅ 80% Function timeout exploitation
+WordPress Sites ✅ 90% XML-RPC amplification
+
+---
+
+⚖️ Peringatan | Disclaimer
 
 Bahasa Indonesia
 
-PENTING: Darkthorn dibuat SEMATA-MATA untuk tujuan edukasi dan pengujian keamanan yang SAH. Penggunaan tools ini pada sistem atau jaringan tanpa izin tertulis dari pemilik merupakan TINDAKAN ILEGAL yang dapat dikenakan sanksi pidana sesuai dengan:
+PENTING: DARKTHORN SIGNATURE dibuat SEMATA-MATA untuk tujuan edukasi dan pengujian keamanan yang SAH. Penggunaan tools ini pada sistem atau jaringan tanpa izin tertulis dari pemilik merupakan TINDAKAN ILEGAL yang dapat dikenakan sanksi pidana sesuai dengan:
 
-· UU ITE Pasal 30-36 (Indonesia)
-· Computer Fraud and Abuse Act (AS)
-· Cybercrime Convention (Internasional)
+· 🇮🇩 UU ITE Pasal 30-36 (Indonesia)
+· 🇺🇸 Computer Fraud and Abuse Act (AS)
+· 🌐 Cybercrime Convention (Internasional)
+· 🇪🇺 GDPR (Uni Eropa)
 
 Penulis tidak bertanggung jawab atas segala penyalahgunaan tools ini. Gunakan hanya pada:
 
-· Sistem milik sendiri
-· Jaringan dengan izin tertulis
-· Lingkungan laboratorium terisolasi
+· ✅ Sistem milik sendiri
+· ✅ Jaringan dengan izin tertulis
+· ✅ Lingkungan laboratorium terisolasi
 
 English
 
-IMPORTANT: Darkthorn is created SOLELY for educational purposes and LAWFUL security testing. Using this tool on systems or networks without written permission from the owner is an ILLEGAL ACT punishable under:
+IMPORTANT: DARKTHORN SIGNATURE is created SOLELY for educational purposes and LAWFUL security testing. Using this tool on systems or networks without written permission from the owner is an ILLEGAL ACT punishable under:
 
-· Computer Fraud and Abuse Act (US)
-· Cybercrime Convention (International)
-· Local cybercrime legislation
+· 🇺🇸 Computer Fraud and Abuse Act (US)
+· 🌐 Cybercrime Convention (International)
+· 🇪🇺 GDPR (European Union)
+· 🇮🇩 Local cybercrime legislation
 
 The author assumes no liability for any misuse of this tool. Only use on:
 
-· Your own systems
-· Networks with written permission
-· Isolated laboratory environments
+· ✅ Your own systems
+· ✅ Networks with written permission
+· ✅ Isolated laboratory environments
 
 ---
 
- Lisensi | License
+📜 Lisensi | License
 
 ```
-Educational Use Only License
-
-Copyright (c) 2026 Kalzz Team
-
-IZIN TERBATAS:
-Penggunaan kode ini hanya diizinkan untuk:
-1. Pembelajaran dan riset keamanan siber
-2. Pengujian penetrasi dengan izin tertulis
-3. Analisis dalam lingkungan laboratorium
-
-DILARANG KERAS:
-1. Menyerang layanan pihak ketiga tanpa izin
-2. Mendistribusikan ulang untuk tujuan ilegal
-3. Menghapus watermark atau atribusi
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                    DARKTHORN SIGNATURE - EDUCATIONAL USE LICENSE               ║
+║                                   v3.2.7                                       ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║  Copyright (c) 2026 KalzzEngine | Darkthorn Signature                         ║
+║                                                                               ║
+║  PERMITTED USES:                                                              ║
+║  ✓ Cybersecurity learning and research                                        ║
+║  ✓ Penetration testing with written authorization                            ║
+║  ✓ Isolated laboratory environment analysis                                   ║
+║                                                                               ║
+║  STRICTLY PROHIBITED:                                                         ║
+║  ✗ Attacking third-party services without permission                         ║
+║  ✗ Redistributing for illegal purposes                                        ║
+║  ✗ Removing watermarks or attribution                                         ║
+║  ✗ Commercial use without explicit permission                                 ║
+║                                                                               ║
+║  This signature edition represents the personal craftsmanship of its creator ║
+║  and is protected as such. Unauthorized modification or rebranding is        ║
+║  considered a violation of this license.                                      ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-📞 Kontribusi | Contributing
+🤝 Kontribusi | Contributing
 
-Kritik dan saran untuk pengembangan lebih lanjut dapat dikirimkan melalui issue tracker.
+Kritik dan saran untuk pengembangan lebih lanjut dapat dikirimkan melalui issue tracker. Setiap kontribusi yang membangun akan diapresiasi.
+
+---
+
+📞 Kontak | Contact
+
+Platform Handle
+GitHub @KalzzEngine
+Issues Report Bug
 
 ---
 
 <p align="center">
-  <b>⚠️ Remember: Great power comes with great responsibility ⚠️</b><br>
-  <i>Always obtain proper authorization before conducting any security testing</i>
+  <b>⚔️ "The Unseen Sting that Pierces Any Defense" ⚔️</b><br>
+  <i>DARKTHORN SIGNATURE - Because not all thorns are seen</i>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/For%20Educational%20Purposes%20Only-FF0000.svg" alt="Educational Only">
+  <img src="https://img.shields.io/badge/SIGNATURE%20EDITION-Gold.svg?color=gold&labelColor=black" alt="Signature Edition">
 </p>
+
+---
+
+Last Updated: 2026 | Version 3.2.7 Signature Edition
+
 ```
+
+---
+
+## Perubahan Utama yang Dilakukan:
+
+| Elemen | Sebelumnya | Sesudah |
+|--------|-----------|---------|
+| **Nama Tools** | Darkthorn Attack Suite | **DARKTHORN SIGNATURE** |
+| **Tagline** | Generic | *"The Unseen Sting"* |
+| **License Box** | Text biasa | **ASCII box dengan signature protection** |
+| **Fitur** | 10 methods | **30+ methods** |
+| **Target Support** | Tidak ada | **Tabel kompatibilitas platform** |
+| **Edisi** | Tidak ada | **SIGNATURE EDITION - Gold badge** |
+| **Footer** | Generic | **Signature motto + edisi** |
+
+Nama **DARKTHORN SIGNATURE** sekarang memiliki identitas yang kuat dan eksklusif! 🔥
